@@ -1,0 +1,1 @@
+<block wx:if="{{$taroCompReady}}"><View class="container"><View class="conut"><Text>count: {{count}}</Text></View><View><Text class="text">{{text}}</Text></View><Button bindtap="onAddClick" class="btn">+1</Button><Button bindtap="onReduceClick" class="btn">-1</Button></View></block>
