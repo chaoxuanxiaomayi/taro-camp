@@ -6,6 +6,7 @@
   "scripts": {
     "build": "rimraf lib && babel packages --out-dir lib --extensions \".js,.ts,.tsx\"",
     "compile": "npm run build && node ./lib/compile-core/index",
+    "runtime": "npm run build &&　node ./lib/runtime-core/index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,6 +18,7 @@
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@babel/template": "^7.16.7",
     "@babel/traverse": "^7.17.10",
     "@babel/types": "^7.17.10",
     "@types/fs-extra": "^9.0.13",
@@ -24,6 +26,7 @@
     "babel-plugin-minify-replace": "^0.5.0",
     "cross-env": "^7.0.3",
     "fs-extra": "^10.1.0",
+    "path": "^0.12.7",
     "react": "^18.1.0",
     "rimraf": "^3.0.2"
   }

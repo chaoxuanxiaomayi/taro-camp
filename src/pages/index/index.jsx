@@ -44,6 +44,7 @@ export default class Index extends Component {
           <Button onClick={this.onReduceClick} className="btn">
             -1
           </Button>
+          <View>part2</View>
         </View>
       )
     }
